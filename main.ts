@@ -4,6 +4,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
     info.startCountdown(5)
 })
 let Present: Sprite = null
+game.showLongText("Santa needs to fill his sleigh, gather presents", DialogLayout.Bottom)
 scene.setBackgroundColor(7)
 let Santa = sprites.create(img`
     . . . . . . 2 2 2 2 . . . . . . 
