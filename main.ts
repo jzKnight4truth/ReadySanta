@@ -1,6 +1,7 @@
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     info.changeScoreBy(1)
     Present.setPosition(randint(10, 150), randint(10, 110))
+    music.playMelody("G F G A - B E C5 ", 598)
     info.startCountdown(5)
 })
 let Present: Sprite = null
